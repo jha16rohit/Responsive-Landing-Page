@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    width: 1480px;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.navbar.scrolled {
+    background: #222;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #f4a261;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.nav-links a:hover {
+    background: #f4a261;
+    transform: scale(1.1);
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/random/1600x900') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+}
+
+.content {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #f4a261;
+    font-size: 14px;
+}
